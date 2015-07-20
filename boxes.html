@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title> Final Project: Amazing Boxes </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="boxes.css">
+  <script src="boxes.js"></script>
+</head>
+<body>
+  <form id="data">
+    <ol>
+      <li>Pick a name for your Amazing Box: <br>
+        <label for="name">Name: </label>
+          <input type="text" id="name" size="20">
+      </li>
+      <li>Pick a color for your Amazing Box: <br>
+        <select id="color">
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="indigo">Indigo</option>
+          <option value="violet">Violet</option>
+        </select>
+      </li>
+      <li>How many Amazing Boxes do you want to create?<br>
+        <input type="radio" id="five" name="amount" value="5">
+          <label for="five">5</label><br>
+        <input type="radio" id="ten" name="amount" value="10">
+          <label for="ten">10</label><br>
+        <input type="radio" id="fifteen" name="amount" value="15">
+          <label for="fifteen">15</label><br>
+      </li>
+    </ol>
+    <p>
+      <input type="button" id="generateButton" value="Generate!">
+      <input type="button" id="clearButton" value="Clear">
+    </p>
+  </form>
+  <div id="scene">
+  </div>
+</body>
+</html>
